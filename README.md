@@ -73,5 +73,5 @@ Remove an entire stack configured in `serverless.yml` via CloudFormation.
 ###
 Websites
 
-S3 bucket website - http://pz-aws-task.s3-website-eu-west-1.amazonaws.com/
+S3 bucket - http://pz-store-app2.s3-website-eu-west-1.amazonaws.com/
 Cloudfront - https://d3bpdzx5kvfm7h.cloudfront.net/
