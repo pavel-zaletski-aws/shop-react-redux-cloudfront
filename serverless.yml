@@ -1,4 +1,4 @@
-service: my-store-app
+service: aws-store-app
 
 frameworkVersion: "3"
 
