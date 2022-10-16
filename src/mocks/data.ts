@@ -10,6 +10,7 @@ export const products: Product[] = [
     price: 24,
     title: "ProductOne",
     img: "",
+    count: 0,
   },
   {
     description: "Short Product Description7",
@@ -17,6 +18,7 @@ export const products: Product[] = [
     price: 15,
     title: "ProductTitle",
     img: "",
+    count: 1,
   },
   {
     description: "Short Product Description2",
@@ -24,6 +26,7 @@ export const products: Product[] = [
     price: 23,
     title: "Product",
     img: "",
+    count: 2,
   },
   {
     description: "Short Product Description4",
@@ -31,6 +34,7 @@ export const products: Product[] = [
     price: 15,
     title: "ProductTest",
     img: "",
+    count: 3,
   },
   {
     description: "Short Product Descriptio1",
@@ -38,6 +42,7 @@ export const products: Product[] = [
     price: 23,
     title: "Product2",
     img: "",
+    count: 4,
   },
   {
     description: "Short Product Description7",
@@ -45,6 +50,7 @@ export const products: Product[] = [
     price: 15,
     title: "ProductName",
     img: "",
+    count: 5,
   },
 ];
 
@@ -60,6 +66,7 @@ export const cart: CartItem[] = [
       price: 24,
       title: "ProductOne",
       img: "",
+      count: 1,
     },
     count: 2,
   },
@@ -70,6 +77,7 @@ export const cart: CartItem[] = [
       price: 15,
       title: "ProductName",
       img: "",
+      count: 3,
     },
     count: 5,
   },
