@@ -9,6 +9,24 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import { theme } from "~/theme";
 import { worker } from "./mocks/browser";
 
+import axios from 'axios';
+
+axios.interceptors.response.use(
+  response => {
+    return response;
+  },
+  function(error) {
+    const status = error.response?.status;
+    if ([401, 403].includes(status)) {
+      alert(error.response.data?.message);
+    }
+    if (status === 400) {
+      alert(error.response.data?.data);
+    }
+    return Promise.reject(error.response);
+  }
+);
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: { refetchOnWindowFocus: false, retry: false, staleTime: Infinity },
